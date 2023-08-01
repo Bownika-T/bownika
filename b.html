@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Button</title>
+</head>
+<body>
+
+<h1 id="myText">i am bownika</h1>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+function changeColor() {
+  var textElement = document.getElementById("myText");
+  var colors = ["red", "blue", "green", "orange", "purple"];
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  textElement.style.color = randomColor;
+}
+</script>
+
+</body>
+</html>
